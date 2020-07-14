@@ -104,8 +104,7 @@ a {
   .project-tagline {
     font-size: 1rem; } }
 
-.main-content {
-  background-color: grey; }
+
 .main-content :first-child {
   margin-top: 0; }
 .main-content img {
@@ -207,6 +206,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .main-content {
+    background-color: #808080;
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
