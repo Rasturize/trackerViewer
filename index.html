@@ -29,10 +29,10 @@
 
 <script>
   if (Modernizr.canvas) {
-    var alert = document.getElementById("canvas");
+    var alert = document.getElementById("canvas").textContent;
     alert.textContent += "detected.";
     else {
-      var alert = document.getElementById("canvas");
+      var alert = document.getElementById("canvas").textContent;
       alert.textContent += "missing.";
     }
   }
