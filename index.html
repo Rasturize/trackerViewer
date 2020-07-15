@@ -26,19 +26,18 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>privacy starts with knowing what you're up against</h3>
 <p>a description will go here eventually</p>
 <h1>Tracking v1</h1>
-
-<p id="canvas"></p>
+<ul id="detect">
+  <li>Detections:</li>
+</ul>
 
 <script>
+
+
   if (Modernizr.canvas) {
-    let alert = document.getElementById("canvas");
-    alert.textContent = 'Canvas detected'
-    alert.appendChild(canvas);
-  else {
-    let alert = document.getElementById("canvas");
-    alert.textContent = 'Canvas missing'
-    alert.appendChild(canvas);
-    }
+    let canvas = document.getElementById("detect");
+    let alert = document.createElement("li");
+    alert.textContent = "Canvas detected"
+    canvas.appendChild(alert);
   }
 
 </script>
