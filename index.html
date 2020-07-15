@@ -16,9 +16,9 @@
     <section class="page-header">
       <h1 class="project-name">TrackerViewer</h1>
       <h2 class="project-tagline">view what can be tracked from your browsing session</h2>
-      <a href="https://github.com/Rasturize/trackerViewer" class="btn">view on GitHub</a>
+      <a href="https://github.com/Rasturize/trackerViewer" class="btn">view on github</a>
       <a href="https://privacytools.io" class="btn">privacy tools</a>
-      <a href="https://github.com/Rasturize/trackerViewer/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/Rasturize/trackerViewer/about" class="btn">about</a>
     </section>
 
     <section class="main-content"><center>
@@ -29,9 +29,15 @@
 
 <script>
   if (Modernizr.canvas) {
-    alert("This browser supports HTML5 canvas!");
+    var alert = document.getElementById("canvas");
+    var text = document.createTextNode("Canvas detected.")
+    alert.appendChild(text);
   }
 </script>
+
+<ul>
+  <li id="canvas">canvas</li>
+</ul>
 
 <h3>
 
