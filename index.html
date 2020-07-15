@@ -22,30 +22,26 @@
     </section>
 
     <section class="main-content"><center>
-      <h3>
+<h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>privacy starts with knowing what you're up against</h3>
 <p>a description will go here eventually</p>
 <h1>Tracking v1</h1>
 
+<p id="canvas"></p>
+
 <script>
   if (Modernizr.canvas) {
-    var alert = document.getElementById("canvas").textContent;
-    alert.textContent += "detected.";
-    else {
-      var alert = document.getElementById("canvas").textContent;
-      alert.textContent += "missing.";
+    var alert = "Canvas detected"
+    document.getElementById("canvas").innerHTML = alert;
+  else {
+    var alert = "Canvas missing"
+    document.getElementById("canvas").innerHTML = alert;
     }
   }
 
-
-
-
 </script>
 
-<p id="canvas">Canvas: </p>
-
 <h3>
-
 
       <footer class="site-footer">
         <span class="site-footer-owner">TrackerViewer is maintained by Rasturize.</span>
