@@ -32,12 +32,17 @@
 
 <script>
 
+  let menu = document.getElementById("detect");
+  let alert = document.createElement("li");
 
   if (Modernizr.canvas) {
-    let canvas = document.getElementById("detect");
-    let alert = document.createElement("li");
-    alert.textContent = "Canvas detected"
-    canvas.appendChild(alert);
+    alert.textContent = "Canvas enabled";
+    menu.appendChild(alert);
+  }
+
+  if (Modernizr.cookies) {
+    alert.textContent = "Cookies enabled";
+    menu.appendChild(alert);
   }
 
 </script>
