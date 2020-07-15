@@ -33,9 +33,11 @@
   if (Modernizr.canvas) {
     let alert = document.getElementById("canvas");
     alert.textContent = 'Canvas detected'
+    alert.appendChild(canvas);
   else {
     let alert = document.getElementById("canvas");
     alert.textContent = 'Canvas missing'
+    alert.appendChild(canvas);
     }
   }
 
