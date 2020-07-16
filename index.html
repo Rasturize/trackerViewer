@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="modernizr-custom.js"></script>
+    <script src="track.js"></script>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -29,23 +30,6 @@
 <ul id="detect">
   <li>Detections:</li>
 </ul>
-
-<script>
-
-  let menu = document.getElementById("detect");
-  let alert = document.createElement("li");
-
-  if (Modernizr.canvas) {
-    alert.textContent = "Canvas enabled";
-    menu.appendChild(alert);
-  }
-
-  if (Modernizr.cookies) {
-    alert.textContent = "Cookies enabled";
-    menu.appendChild(alert);
-  }
-
-</script>
 
 <h3>
 
