@@ -1,28 +1,30 @@
 
+function triggerAlerts() {
 
-let menu = document.getElementById("detect");
-let alert = document.createElement("li");
+  let menu = document.getElementById("detect");
+  let alert = document.createElement("li");
 
-if (Modernizr.canvas) {
-  alert.textContent = "Canvas enabled";
-  menu.appendChild(alert);
+  if (Modernizr.canvas) {
+    alert.textContent = "Canvas enabled";
+    menu.appendChild(alert);
+  }
+
+  if (Modernizr.cookies) {
+    alert.textContent = "Cookies enabled";
+    menu.appendChild(alert);
+  }
+
+  if (Modernizr.cors) {
+    alert.textContent = "Cross-Domain sharing enabled";
+    menu.appendChild(alert);
+  }
+
+  if (Modernizr.fullscreen) {
+    alert.textContent = "Fullscreen takeover enabled";
+    menu.appendChild(alert);
+  }
+
 }
-
-if (Modernizr.cookies) {
-  alert.textContent = "Cookies enabled";
-  menu.appendChild(alert);
-}
-
-if (Modernizr.cors) {
-  alert.textContent = "Cross-Domain sharing enabled";
-  menu.appendChild(alert);
-}
-
-if (Modernizr.fullscreen) {
-  alert.textContent = "Fullscreen takeover enabled";
-  menu.appendChild(alert);
-}
-
 
  // ctrl + /
 // if (Modernizr.geolocation) {
