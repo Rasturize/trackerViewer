@@ -7,21 +7,25 @@ function triggerAlerts() {
   if (Modernizr.canvas) {
     alert.textContent = "Canvas enabled";
     menu.appendChild(alert);
+    break;
   }
 
   if (Modernizr.cookies) {
     alert.textContent = "Cookies enabled";
     menu.appendChild(alert);
+    break;
   }
 
   if (Modernizr.cors) {
     alert.textContent = "Cross-Domain sharing enabled";
     menu.appendChild(alert);
+    break;
   }
 
   if (Modernizr.fullscreen) {
     alert.textContent = "Fullscreen takeover enabled";
     menu.appendChild(alert);
+    break;
   }
 
 }
