@@ -2,7 +2,7 @@
 function triggerAlerts() {
 
   let menu = document.getElementById("detect");
-  let alert = document.createElement("li");
+  let alert = document.createElement("td");
 
   switch() {
     default:
