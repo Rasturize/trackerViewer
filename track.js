@@ -2,22 +2,19 @@
 function triggerAlerts() {
 
   let menu = document.getElementById("detect");
-  let alert = document.createElement("td");
 
   switch() {
-    default:
-      text = "results will be shown here..."
-      menu.appendChild(alert)
-      break;
     case 0:
+      let canvas = document.createElement("canvas");
       if (Modernizr.canvas) {
-        alert.textContent = "Canvas enabled";
-        menu.appendChild(alert);
+        canvas.textContent = "Enabled";
+        menu.appendChild(canvas);
         break;
       }
     case 1:
+
       if (Modernizr.cookies) {
-        alert.textContent = "Cookies enabled";
+        alert.textContent = "Enabled";
         menu.appendChild(alert);
         break;
       }
