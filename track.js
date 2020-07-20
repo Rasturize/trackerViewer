@@ -1,5 +1,5 @@
 
-function triggerAlerts(detect) {
+function triggerAlerts() {
 
   let menu = document.getElementById("detect");
   let alert = document.createElement("td");
