@@ -7,6 +7,7 @@ function triggerAlerts() {
   switch() {
     default:
       text = "results will be shown here..."
+      menu.appendChild(alert)
       break;
     case 0:
       if (Modernizr.canvas) {
@@ -14,31 +15,26 @@ function triggerAlerts() {
         menu.appendChild(alert);
         break;
       }
+    case 1:
+      if (Modernizr.cookies) {
+        alert.textContent = "Cookies enabled";
+        menu.appendChild(alert);
+        break;
+      }
+    case 2:
+      if (Modernizr.cors) {
+        alert.textContent = "Cross-Domain sharing enabled";
+        menu.appendChild(alert);
+        break;
+      }
+    case 3:
+      if (Modernizr.fullscreen) {
+        alert.textContent = "Fullscreen takeover enabled";
+        menu.appendChild(alert);
+        break;
+      }
+      
   }
-
-  // if (Modernizr.canvas) {
-  //   alert.textContent = "Canvas enabled";
-  //   menu.appendChild(alert);
-  //   break;
-  // }
-  //
-  // if (Modernizr.cookies) {
-  //   alert.textContent = "Cookies enabled";
-  //   menu.appendChild(alert);
-  //   break;
-  // }
-  //
-  // if (Modernizr.cors) {
-  //   alert.textContent = "Cross-Domain sharing enabled";
-  //   menu.appendChild(alert);
-  //   break;
-  // }
-  //
-  // if (Modernizr.fullscreen) {
-  //   alert.textContent = "Fullscreen takeover enabled";
-  //   menu.appendChild(alert);
-  //   break;
-  // }
 
 }
 
