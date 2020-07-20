@@ -1,5 +1,5 @@
 
-function triggerAlerts() {
+function triggerAlerts(detect) {
 
   let menu = document.getElementById("detect");
   let alert = document.createElement("td");
@@ -33,7 +33,7 @@ function triggerAlerts() {
         menu.appendChild(alert);
         break;
       }
-      
+
   }
 
 }
